@@ -1,0 +1,9 @@
+[
+    {
+        "name": "blog",
+        "type": "dir",
+        "label": "日记",
+        "collapsible": true,
+        "collapsed": false
+    }
+]

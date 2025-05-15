@@ -1,0 +1,9 @@
+[   
+    {
+        "type": "dir",
+        "label": "驾照101",
+        "name": "driving-license",
+        "collapsible": true,
+        "collapsed": false
+    }
+]

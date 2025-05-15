@@ -1,0 +1,75 @@
+# 2025-04-20
+
+## 🏁 已完成
+
+1. 刷题、记录相关笔记
+2. 整理科目一相关的内容以便给其他人学习参考
+
+## 📖 知识
+
+### 1. 关于选择 icon 的一些思考
+
+icon 的选择是一个很重要的问题，因为它直接影响到用户体验， 综合来看 icon 选择有以下几个方面：
+
+1. 数量
+2. 依赖关系
+
+|包名|大小|是否有依赖|
+|---|---|---|
+|mui material icon|2100+|依赖于 mui/material 和 emotion/styled|
+|font-awesome| 四种风格 13292+ |不限定框架、不绑定组件库|
+|ionicons| 1300+ |不限定框架、不绑定组件库|
+|heroicons| 316 |基于tailwindcss、不绑定组件库|
+|iconify| 超过20w+ |不限定框架、不绑定组件库|
+
+:::tip 注意
+
+仅对于这几个 icon 包进行比较，不包括比较其他第三方实现的 icon 包。
+
+例如： react 生态非常庞大，很多 icon 在 react 都有人实现。ionicons 它本身是为 ionic 框架设计的，但是在 React 生态中，也有一个名为 react-ionicons 的包，它是基于 React 实现的 ionicons。在这种情况，ionicons 更像是一个 icon 的 设计系统
+
+:::
+
+这几个 icon 包，基本代表了全部icon包的类型: 
+
+#### [@mui/icons-material](https://mui.com/)——绑定组件库的icon包
+
+优点：当使用其组件库时，开发非常顺畅，不需要额外的学习成本。
+
+缺点：不支持其他框架，且资源通常较少，设计资源通常需要pro
+
+#### [font-awesome](https://fontawesome.com/)——最丰富的icon包
+
+优点：支持多种风格，资源丰富，支持多种框架，且支持自定义
+
+缺点：自定义时需要订阅付费
+
+#### [ionicons](https://ionic.io/ionicons)——基于web-component的icon包
+
+优点：可以在任何 web 环境下使用
+
+缺点：风格单一，仅有 outlined 风格
+
+#### [heroicons](https://heroicons.com/)——基于tailwindcss的icon包
+
+优点：两种风格设计，不限定组件库与前端框架
+
+缺点：需要tailwindcss支持，且资源较少
+
+#### [iconify](https://iconify.design/)——全能且开源的icon包
+
+优点：资源庞大令人咋舌，对其他框架的支持也非常好，甚至支持 tailwindcss 和 unocss。
+
+缺点：独特的API获取资源的设计，需要网络环境才能渲染。
+
+:::info 其他库
+
+https://yesicon.app/   
+
+:::
+
+### 2. 关于 icon 的使用
+
+1. 直接使用 icon 包。
+2. 设计师绘制 svg 图标，然后给前端使用。
+
