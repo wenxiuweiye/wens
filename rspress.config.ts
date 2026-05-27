@@ -53,5 +53,13 @@ export default defineConfig({
         },
       ],
     }),
-  ]
+  ],
+  builderConfig: {
+    source: {
+      alias: {
+        '@': path.join(__dirname, 'src'),
+      },
+    },
+  },
+  ssg: false,
 });
