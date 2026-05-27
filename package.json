@@ -15,10 +15,10 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.507.0",
+    "motion": "^12.17.0",
     "oh-my-live2d": "^0.19.3",
     "postcss": "^8.5.3",
     "randomcolor": "^0.6.2",
-    "rspress": "^1.40.2",
     "rspress-plugin-devkit": "^0.3.0",
     "rspress-plugin-mermaid": "^0.3.0",
     "rspress-plugin-reading-time": "^0.3.0",
@@ -31,6 +31,8 @@
     "@types/node": "^18.11.17",
     "@types/randomcolor": "^0.5.9",
     "@types/react": "^19.1.2",
+    "netlify-cli": "^21.4.1",
+    "rspress": "^1.40.2",
     "tailwindcss": "^4.1.4"
   }
 }

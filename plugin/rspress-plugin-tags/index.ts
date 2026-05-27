@@ -10,7 +10,6 @@ import type { RspressPlugin } from '@rspress/shared';
 
 export default function rspressPluginTags(): RspressPlugin {
 
-
   const remarkInsertTags = new RemarkInsertComponentPluginFactory({
     components: [
       {

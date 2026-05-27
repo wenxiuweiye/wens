@@ -11,6 +11,7 @@ type Author = {
     github?: string;
     xhs?: string;
     bilibili?: string;
+    x?: string
   };
 };
 
@@ -32,7 +33,7 @@ export default function Author() {
               <div className=" text-sm text-gray-500">{author.description}</div>
             ) : null}
             {author.socials ? (
-              <div className=" flex items-center space-x-1">
+              <div className=" flex items-center space-x-2">
                 {author.socials.qq ? (
                   <a href={author.socials.qq}>
                     <span className="icon-[cib--tencent-qq] w-4 h-4 "></span>
@@ -51,6 +52,11 @@ export default function Author() {
                 {author.socials.bilibili ? (
                   <a href={author.socials.bilibili}>
                     <span className=" bg-blue-600 icon-[ant-design--bilibili-outlined] w-5 h-5"></span>
+                  </a>
+                ) : null}
+                {author.socials.x ? (
+                  <a href={author.socials.x}>
+                    <span className="  icon-[logos--x] w-4 h-4"></span>
                   </a>
                 ) : null}
               </div>

@@ -1,0 +1,5 @@
+[build]
+publish = "./doc_build"
+commandOrigin = "."
+base = "."
+command = "pnpm run build"
