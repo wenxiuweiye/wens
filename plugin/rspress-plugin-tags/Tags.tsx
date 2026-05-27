@@ -1,6 +1,6 @@
 import React from "react";
 import { useDark, usePageData } from "rspress/runtime";
-import { Badge } from "../../src/components/ui/Badge";
+import { Badge } from "@/components/ui/Badge";
 import randomColor from "randomcolor";
 
 import {randomEmoji} from '../../lib/randomEmoji'
