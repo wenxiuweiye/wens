@@ -4,7 +4,7 @@ import readingTime from 'rspress-plugin-reading-time';
 import mermaid from 'rspress-plugin-mermaid'
 
 import live2d from './plugin/rspress-plugin-live2d';
-import tags from './plugin/rspress-plugin-tags';
+
 import author from './plugin/rspress-plugin-author';
 
 export default defineConfig({
@@ -30,7 +30,6 @@ export default defineConfig({
     ],
   },
   plugins:[
-    tags(),
     readingTime(),
     mermaid(),
     author(),
