@@ -1,4 +1,4 @@
-import { RspressPlugin } from '@rspress/shared';
+import { RspressPlugin } from '@rspress/core';
 import path from 'path';
 import {Options} from 'oh-my-live2d'
 

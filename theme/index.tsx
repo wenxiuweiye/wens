@@ -1,10 +1,5 @@
-import Theme from 'rspress/theme';
+import { Layout as BasicLayout } from '@rspress/core/theme-original';
 
-const Layout = () => <Theme.Layout />;
+export const Layout = BasicLayout;
 
-export default {
-  ...Theme,
-  Layout,
-};
-
-export * from 'rspress/theme';
+export * from '@rspress/core/theme-original';

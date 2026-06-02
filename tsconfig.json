@@ -12,9 +12,11 @@
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
     "allowImportingTsExtensions": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@theme": ["./theme/index.tsx"]
     }
   },
   "include": ["docs", "theme", "rspress.config.ts"],

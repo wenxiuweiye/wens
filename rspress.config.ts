@@ -1,14 +1,17 @@
 import * as path from 'node:path';
-import { defineConfig } from 'rspress/config';
+import type { UserConfig } from '@rspress/core';
+import { defineConfig } from '@rspress/core';
 import readingTime from 'rspress-plugin-reading-time';
-import mermaid from 'rspress-plugin-mermaid'
+import mermaid from 'rspress-plugin-mermaid';
+import { pluginLess } from '@rsbuild/plugin-less';
 
 import live2d from './plugin/rspress-plugin-live2d';
 
 import author from './plugin/rspress-plugin-author';
 
 export default defineConfig({
-  root: path.join(__dirname, 'docs'),
+
+  root: 'docs',
   title: 'wens|文思泉涌',
   icon: '/wens-icon.svg',
   logo: {
@@ -29,36 +32,28 @@ export default defineConfig({
       },
     ],
   },
-  plugins:[
+  builderConfig: {
+    plugins: [pluginLess()],
+    "dev": {
+      "hmr": true,
+    },
+
+  },
+  plugins: [
     readingTime(),
     mermaid(),
     author(),
     live2d({
       models: [
-        {
-          path: path.join('/IceGirl/IceGirl.model3.json'),
-          position: [0, 60],
-          scale: 0.08,
-        },
+
         {
           path: path.join('/椿/椿.model3.json'),
           position: [0, 60],
           scale: 0.09,
         },
-        {
-          path: path.join('/ellot/ellot.model3.json'),
-          position: [0, 60],
-          scale: 0.12,
-        },
+
       ],
     }),
   ],
-  builderConfig: {
-    source: {
-      alias: {
-        '@': path.join(__dirname, 'src'),
-      },
-    },
-  },
-  ssg: false,
-});
+
+} as UserConfig);

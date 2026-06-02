@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, AvatarImage } from "../../src/components/ui/avatar";
-import { usePageData } from "rspress/runtime";
+import { usePageData } from "@rspress/core/runtime";
 
 type Author = {
   image: string;

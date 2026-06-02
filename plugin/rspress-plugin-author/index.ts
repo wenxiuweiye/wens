@@ -1,11 +1,8 @@
 import path from 'node:path';
 
-import {
-  PresetConfigMutator,
-  RemarkInsertComponentPluginFactory,
-} from 'rspress-plugin-devkit';
+import { RemarkInsertComponentPluginFactory } from 'rspress-plugin-devkit';
 
-import type { RspressPlugin } from '@rspress/shared';
+import type { RspressPlugin } from '@rspress/core';
 
 export default function rspressPluginAuthor(): RspressPlugin {
 
@@ -23,9 +20,6 @@ export default function rspressPluginAuthor(): RspressPlugin {
 
   return {
     name: 'rspress-plugin-author',
-    config(config) {
-      return new PresetConfigMutator(config).disableMdxRs().toConfig();
-    },
     markdown: {
       remarkPlugins: [remarkInsertAuthor.remarkPlugin],
       globalComponents: remarkInsertAuthor.mdxComponents,
