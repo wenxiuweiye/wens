@@ -55,5 +55,5 @@ export default defineConfig({
       ],
     }),
   ],
-"ssg" :true
+"ssg" : false
 } as UserConfig);
