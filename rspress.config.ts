@@ -33,9 +33,13 @@ export default defineConfig({
     ],
   },
   builderConfig: {
-    plugins: [pluginLess()],
+    plugins: [pluginLess()], 
+    "performance": {
+      "buildCache": false
+    },
     "dev": {
       "hmr": true,
+      "liveReload": true,
     },
 
   },
@@ -45,7 +49,6 @@ export default defineConfig({
     author(),
     live2d({
       models: [
-
         {
           path: path.join('/椿/椿.model3.json'),
           position: [0, 60],
