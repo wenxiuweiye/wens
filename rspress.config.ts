@@ -47,16 +47,6 @@ export default defineConfig({
     readingTime(),
     mermaid(),
     author(),
-    live2d({
-      models: [
-        {
-          path: path.join('/椿/椿.model3.json'),
-          position: [0, 60],
-          scale: 0.09,
-        },
-
-      ],
-    }),
   ],
 "ssg" : false
 } as UserConfig);
